@@ -13,8 +13,8 @@ export const FOOTER_COPY = {
 export const LOGIN_COPY = {
   pageTitle: "Portal de Acceso",
   pageSubtitle: "Introduce tus credenciales para continuar",
-  emailLabel: "Email",
-  emailPlaceholder: "usuario@academia10.com",
+  usuarioLabel: "Usuario",
+  usuarioPlaceholder: "Tu usuario",
   passwordLabel: "Contraseña",
   passwordPlaceholder: "••••••••",
   roleLabel: "Entrar como",

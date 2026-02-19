@@ -40,13 +40,13 @@ export function LoginForm({ onSubmit, showRoleSelector = true }: LoginFormProps)
 
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="space-y-2">
-          <Label htmlFor="email" className="text-sm font-medium text-slate-900">
-            {LOGIN_COPY.emailLabel}
+          <Label htmlFor="usuario" className="text-sm font-medium text-slate-900">
+            {LOGIN_COPY.usuarioLabel}
           </Label>
           <Input
-            id="email"
-            type="email"
-            placeholder={LOGIN_COPY.emailPlaceholder}
+            id="usuario"
+            type="text"
+            placeholder={LOGIN_COPY.usuarioPlaceholder}
             className="h-11 bg-slate-50 border-slate-200"
             required
           />

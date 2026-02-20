@@ -22,7 +22,7 @@ export function ActionCard({
   className,
 }: ActionCardProps) {
   return (
-    <a href={href} className="group block h-full">
+    <a href={href} target="_blank" rel="noopener noreferrer" className="group block h-full">
       <Card
         className={cn(
           "bg-white rounded-xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 h-full",

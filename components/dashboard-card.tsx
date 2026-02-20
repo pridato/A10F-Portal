@@ -24,6 +24,8 @@ export function DashboardCard({ title, icon: Icon, variant = "default", href = "
   return (
     <a
       href={href}
+      target="_blank"
+      rel="noopener noreferrer"
       className={cn(
         "group relative overflow-hidden rounded-2xl border p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1",
         variantStyles[variant],

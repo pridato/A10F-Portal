@@ -16,7 +16,7 @@ interface AppHeaderProps {
 export function AppHeader({
   greeting,
   avatarInitial,
-  avatarClassName = "bg-blue-950 text-white",
+  avatarClassName = "bg-primary text-primary-foreground",
   onLogout,
   showNotifications = true,
 }: AppHeaderProps) {
@@ -25,9 +25,11 @@ export function AppHeader({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-3">
-            <span className="text-2xl font-bold text-slate-900 dark:text-slate-100">{SITE_BRAND.shortName}</span>
-            <span className="mx-2 text-slate-300 dark:text-slate-600">|</span>
-            <span className="text-sm font-medium text-slate-700 dark:text-slate-300">{SITE_BRAND.fullName}</span>
+            <img 
+              src="/images/a10f-logo.png" 
+              alt="Academia 10 Formación" 
+              className="h-10 w-auto"
+            />
           </div>
           <div className="flex items-center space-x-4">
             {showNotifications && (

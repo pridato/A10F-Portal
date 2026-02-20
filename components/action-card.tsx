@@ -16,7 +16,7 @@ interface ActionCardProps {
   className?: string
 }
 
-const DEFAULT_ICON_BG = "bg-blue-950"
+const DEFAULT_ICON_BG = "bg-primary"
 
 export function ActionCard({
   title,

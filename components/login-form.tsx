@@ -37,9 +37,11 @@ export function LoginForm({ onSubmit, showRoleSelector = true }: LoginFormProps)
       <div className="flex flex-col items-center mb-8">
         <div className="mb-6">
           <div className="flex items-center justify-center">
-            <span className="text-3xl font-bold text-slate-900">A10F</span>
-            <span className="mx-2 text-slate-300">|</span>
-            <span className="text-sm font-medium text-slate-700">Academia 10 Formación</span>
+            <img 
+              src="/images/a10f-logo.png" 
+              alt="Academia 10 Formación" 
+              className="h-16 w-auto"
+            />
           </div>
         </div>
         <h1 className="text-2xl font-bold text-slate-900 text-center">{LOGIN_COPY.pageTitle}</h1>
@@ -82,7 +84,7 @@ export function LoginForm({ onSubmit, showRoleSelector = true }: LoginFormProps)
               id="role"
               value={selectedRole}
               onChange={(e) => setSelectedRole(e.target.value as LoggedInRole)}
-              className="w-full h-11 px-3 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-950 focus:border-transparent"
+              className="w-full h-11 px-3 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
             >
               {ROLE_OPTIONS.map((opt) => (
                 <option key={opt.value} value={opt.value}>
@@ -96,7 +98,7 @@ export function LoginForm({ onSubmit, showRoleSelector = true }: LoginFormProps)
         <Button
           type="submit"
           disabled={isSubmitting}
-          className="w-full h-12 bg-blue-950 hover:bg-blue-900 text-white font-medium shadow-sm hover:shadow-md transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full h-12 bg-primary hover:bg-primary/90 text-primary-foreground font-medium shadow-sm hover:shadow-md transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isSubmitting ? (
             <>

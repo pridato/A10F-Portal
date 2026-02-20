@@ -5,39 +5,40 @@
 
 :root {
   /* A10F Brand Colors - Navy Blue Primary, Crimson Red Accent */
+  /* Colores ajustados para coincidir con el logo oficial */
   --background: oklch(0.99 0.002 247);
-  --foreground: oklch(0.24 0.035 252);
+  --foreground: oklch(0.20 0.04 252); /* Azul marino más oscuro para texto */
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.24 0.035 252);
+  --card-foreground: oklch(0.20 0.04 252);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.24 0.035 252);
-  --primary: oklch(0.29 0.06 252); /* Navy Blue from A10F logo */
+  --popover-foreground: oklch(0.20 0.04 252);
+  --primary: oklch(0.25 0.08 252); /* Navy Blue más intenso del logo */
   --primary-foreground: oklch(0.99 0 0);
   --secondary: oklch(0.96 0.004 247);
-  --secondary-foreground: oklch(0.24 0.035 252);
+  --secondary-foreground: oklch(0.20 0.04 252);
   --muted: oklch(0.965 0.004 247);
-  --muted-foreground: oklch(0.52 0.015 252);
-  --accent: oklch(0.58 0.22 15); /* Crimson Red from A10F logo */
+  --muted-foreground: oklch(0.50 0.02 252);
+  --accent: oklch(0.55 0.25 15); /* Rojo vibrante del logo más saturado */
   --accent-foreground: oklch(0.99 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
+  --destructive: oklch(0.55 0.25 15); /* Mismo rojo para consistencia */
   --destructive-foreground: oklch(0.99 0 0);
   --border: oklch(0.92 0.004 247);
   --input: oklch(0.92 0.004 247);
-  --ring: oklch(0.29 0.06 252);
-  --chart-1: oklch(0.58 0.22 15);
-  --chart-2: oklch(0.29 0.06 252);
+  --ring: oklch(0.25 0.08 252);
+  --chart-1: oklch(0.55 0.25 15); /* Rojo del logo */
+  --chart-2: oklch(0.25 0.08 252); /* Azul marino del logo */
   --chart-3: oklch(0.65 0.15 220);
   --chart-4: oklch(0.7 0.18 30);
   --chart-5: oklch(0.55 0.12 280);
   --radius: 0.875rem;
   --sidebar: oklch(0.99 0 0);
-  --sidebar-foreground: oklch(0.24 0.035 252);
-  --sidebar-primary: oklch(0.29 0.06 252);
+  --sidebar-foreground: oklch(0.20 0.04 252);
+  --sidebar-primary: oklch(0.25 0.08 252);
   --sidebar-primary-foreground: oklch(0.99 0 0);
   --sidebar-accent: oklch(0.96 0.004 247);
-  --sidebar-accent-foreground: oklch(0.24 0.035 252);
+  --sidebar-accent-foreground: oklch(0.20 0.04 252);
   --sidebar-border: oklch(0.92 0.004 247);
-  --sidebar-ring: oklch(0.29 0.06 252);
+  --sidebar-ring: oklch(0.25 0.08 252);
 }
 
 .dark {

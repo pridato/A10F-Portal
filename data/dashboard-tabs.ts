@@ -23,7 +23,7 @@ export const DASHBOARD_PROFESSOR_HEADER = {
 } as const
 
 export const DASHBOARD_PROFESSOR_STATS: QuickStatItem[] = [
-  { value: "3", label: "Clases de hoy", icon: Clock, iconBgClass: "bg-blue-50", iconColorClass: "text-blue-600" },
+  { value: "3", label: "Clases de hoy", icon: Clock, iconBgClass: "bg-primary/10", iconColorClass: "text-primary" },
   { value: "47", label: "Alumnos activos", icon: UserCheck, iconBgClass: "bg-green-50", iconColorClass: "text-green-600" },
   { value: "5", label: "Mensajes sin leer", icon: Mail, iconBgClass: "bg-red-50", iconColorClass: "text-red-600" },
 ]

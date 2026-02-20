@@ -37,7 +37,7 @@ export default function DashboardPage() {
       <AppHeader
         greeting={userName}
         avatarInitial={userName[0]}
-        avatarClassName="bg-slate-900 text-white"
+        avatarClassName="bg-primary text-primary-foreground"
         onLogout={() => {}}
       />
 
@@ -47,13 +47,13 @@ export default function DashboardPage() {
             <TabsList className="inline-flex h-12 items-center justify-center rounded-xl bg-white p-1 shadow-sm border border-slate-200">
               <TabsTrigger
                 value="profesor"
-                className="rounded-lg px-8 py-2 text-sm font-medium transition-all data-[state=active]:bg-slate-900 data-[state=active]:text-white data-[state=active]:shadow"
+                className="rounded-lg px-8 py-2 text-sm font-medium transition-all data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow"
               >
                 Vista Profesor
               </TabsTrigger>
               <TabsTrigger
                 value="alumno"
-                className="rounded-lg px-8 py-2 text-sm font-medium transition-all data-[state=active]:bg-red-600 data-[state=active]:text-white data-[state=active]:shadow"
+                className="rounded-lg px-8 py-2 text-sm font-medium transition-all data-[state=active]:bg-accent data-[state=active]:text-accent-foreground data-[state=active]:shadow"
               >
                 Vista Alumno
               </TabsTrigger>
@@ -94,7 +94,7 @@ export default function DashboardPage() {
                   description={card.description}
                   icon={card.icon}
                   href={card.href}
-                  iconBgClass="bg-slate-900"
+                  iconBgClass="bg-primary"
                   showNotifyButton={card.title === "Grupos"}
                 />
               ))}
@@ -122,7 +122,7 @@ export default function DashboardPage() {
                     description={card.description}
                     icon={card.icon}
                     href={card.href}
-                    iconBgClass="bg-red-600"
+                    iconBgClass="bg-accent"
                   />
                 ))
               )}

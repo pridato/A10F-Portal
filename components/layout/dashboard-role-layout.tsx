@@ -10,7 +10,7 @@ interface DashboardRoleLayoutProps {
   role: LoggedInRole
   onLogout: () => void
   children: ReactNode
-  /** Clase del avatar (ej. bg-blue-950 para admin/profesor, bg-red-600 para alumno) */
+  /** Clase del avatar (ej. bg-primary para admin/profesor, bg-accent para alumno) */
   avatarClassName?: string
 }
 

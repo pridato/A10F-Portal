@@ -18,8 +18,8 @@ export const TEACHER_QUICK_STATS: QuickStatItem[] = [
     value: "3",
     label: "Clases de hoy",
     icon: Clock,
-    iconBgClass: "bg-blue-50",
-    iconColorClass: "text-blue-600",
+    iconBgClass: "bg-primary/10",
+    iconColorClass: "text-primary",
   },
   {
     value: "5",

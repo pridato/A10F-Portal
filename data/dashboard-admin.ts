@@ -26,8 +26,8 @@ export const ADMIN_QUICK_STATS: QuickStatItem[] = [
     value: "247",
     label: "Total Alumnos",
     icon: UserCircle2,
-    iconBgClass: "bg-blue-50",
-    iconColorClass: "text-blue-600",
+    iconBgClass: "bg-primary/10",
+    iconColorClass: "text-primary",
   },
   {
     value: "18",

@@ -113,7 +113,7 @@ export default function App() {
       <DashboardRoleLayout
         role="student"
         onLogout={handleLogout}
-        avatarClassName="bg-red-600 text-white"
+        avatarClassName="bg-accent text-accent-foreground"
       >
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-slate-900 mb-3">{STUDENT_HEADER.title}</h1>
@@ -128,7 +128,7 @@ export default function App() {
               description={card.description}
               icon={card.icon}
               href={card.href}
-              iconBgClass="bg-red-600"
+              iconBgClass="bg-accent"
             />
           ))}
         </div>

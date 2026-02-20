@@ -45,7 +45,7 @@ export const TEACHER_CARDS: DashboardCardItem[] = [
   },
   {
     icon: Video,
-    title: "Zoom directamente!",
+    title: "zoom",
     description: "Inicia clases en directo",
     href: "https://zoom.us/",
   },

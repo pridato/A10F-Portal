@@ -4,7 +4,7 @@ import {
   PlayCircle,
   Receipt,
 } from "lucide-react"
-import type { DashboardCardItem, NextClassBannerData } from "@/types/portal"
+import type { DashboardCardItem, NextClassBannerData, InvoiceItem } from "@/types/portal"
 
 export const STUDENT_HEADER: { title: string; subtitle: string } = {
   title: "Área del Alumno",
@@ -42,5 +42,36 @@ export const STUDENT_CARDS: DashboardCardItem[] = [
     title: "Facturas",
     description: "Gestiona tus pagos",
     href: "#",
+  },
+]
+
+export const STUDENT_INVOICES: InvoiceItem[] = [
+  {
+    id: "inv-001",
+    title: "Matrícula Curso Cálculo",
+    amount: 450,
+    date: "2025-01-15",
+    status: "paid",
+  },
+  {
+    id: "inv-002",
+    title: "Mensualidad Enero",
+    amount: 120,
+    date: "2025-01-01",
+    status: "paid",
+  },
+  {
+    id: "inv-003",
+    title: "Mensualidad Febrero",
+    amount: 120,
+    date: "2025-02-01",
+    status: "pending",
+  },
+  {
+    id: "inv-004",
+    title: "Material Didáctico",
+    amount: 35,
+    date: "2025-01-20",
+    status: "paid",
   },
 ]

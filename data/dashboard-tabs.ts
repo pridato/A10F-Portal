@@ -33,7 +33,7 @@ export const DASHBOARD_PROFESSOR_CARDS: DashboardCardItem[] = [
   { icon: BookOpen, title: "Cursos", description: "Gestiona tus cursos y contenido", href: "#" },
   { icon: Users, title: "Grupos", description: "Administra grupos de estudiantes", href: "#" },
   { icon: MessageSquare, title: "Comunicación", description: "Mensajes y notificaciones", href: "#" },
-  { icon: Video, title: "Zoom directamente!", description: "Inicia sesiones de Zoom", href: "https://zoom.us/" },
+  { icon: Video, title: "zoom", description: "Inicia sesiones de Zoom", href: "https://zoom.us/" },
   { icon: Calendar, title: "Horarios", description: "Consulta tu calendario de clases", href: "#" },
   { icon: FolderOpen, title: "Material Didáctico", description: "Sube y organiza recursos", href: "#" },
 ]
@@ -49,6 +49,13 @@ export const DASHBOARD_STUDENT_BANNER = {
   title: "Cálculo Universitario",
   schedule: "Hoy a las 17:00h",
   ctaText: "Unirse ahora",
+} as const
+
+export const DASHBOARD_PROFESSOR_BANNER = {
+  subtitle: "Próxima clase en directo",
+  title: "Cálculo Universitario - Grupo A",
+  schedule: "Hoy a las 17:00h",
+  ctaText: "Iniciar Zoom",
 } as const
 
 export const DASHBOARD_STUDENT_CARDS: DashboardCardItem[] = [

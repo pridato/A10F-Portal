@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import { Spinner } from "@/components/ui/spinner"
 import { LOGIN_COPY } from "@/constants/site"
 import { ROLE_OPTIONS } from "@/constants/roles"
 import type { Role } from "@/types/portal"
@@ -18,10 +19,17 @@ interface LoginFormProps {
 
 export function LoginForm({ onSubmit, showRoleSelector = true }: LoginFormProps) {
   const [selectedRole, setSelectedRole] = useState<LoggedInRole>("student")
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    onSubmit(selectedRole)
+    setIsSubmitting(true)
+    
+    // Simular delay de autenticación
+    setTimeout(() => {
+      onSubmit(selectedRole)
+      setIsSubmitting(false)
+    }, 500)
   }
 
   return (
@@ -87,9 +95,17 @@ export function LoginForm({ onSubmit, showRoleSelector = true }: LoginFormProps)
 
         <Button
           type="submit"
-          className="w-full h-12 bg-blue-950 hover:bg-blue-900 text-white font-medium shadow-sm hover:shadow-md transition-all duration-200"
+          disabled={isSubmitting}
+          className="w-full h-12 bg-blue-950 hover:bg-blue-900 text-white font-medium shadow-sm hover:shadow-md transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {LOGIN_COPY.submitButton}
+          {isSubmitting ? (
+            <>
+              <Spinner className="mr-2 h-4 w-4" />
+              Entrando...
+            </>
+          ) : (
+            LOGIN_COPY.submitButton
+          )}
         </Button>
       </form>
 

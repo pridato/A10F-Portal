@@ -50,3 +50,27 @@ export interface PortalCardItem {
   variant?: CardVariant
   href?: string
 }
+
+/** Estado de pago de una factura */
+export type InvoiceStatus = "paid" | "pending"
+
+/** Elemento de factura del alumno */
+export interface InvoiceItem {
+  id: string
+  title: string
+  amount: number
+  date: string
+  status: InvoiceStatus
+}
+
+/** Tipo de archivo en el repositorio */
+export type FileType = "pdf" | "video" | "image" | "document" | "other"
+
+/** Elemento de archivo en el repositorio */
+export interface FileItem {
+  id: string
+  name: string
+  date: string
+  type: FileType
+  downloadUrl: string
+}

@@ -8,7 +8,8 @@ import { QuickStatCard } from "@/components/quick-stat-card"
 import { ActionCard } from "@/components/action-card"
 import { NextClassBanner } from "@/components/next-class-banner"
 import { FOOTER_COPY } from "@/constants/site"
-import { ADMIN_HEADER, ADMIN_QUICK_STATS, ADMIN_CARDS } from "@/data/dashboard-admin"
+import { ADMIN_HEADER, ADMIN_QUICK_STATS, ADMIN_CARDS, ADMIN_ACTIVITY_LOGS } from "@/data/dashboard-admin"
+import { ActivityCard } from "@/components/activity-card"
 import { TEACHER_HEADER, TEACHER_QUICK_STATS, TEACHER_CARDS } from "@/data/dashboard-teacher"
 import { STUDENT_HEADER, STUDENT_CARDS, STUDENT_NEXT_CLASS_BANNER } from "@/data/dashboard-student"
 
@@ -42,8 +43,8 @@ export default function App() {
     return (
       <DashboardRoleLayout role="admin" onLogout={handleLogout}>
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-slate-900 mb-3">{ADMIN_HEADER.title}</h1>
-          <p className="text-slate-600">{ADMIN_HEADER.subtitle}</p>
+          <h1 className="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-3">{ADMIN_HEADER.title}</h1>
+          <p className="text-slate-600 dark:text-slate-400">{ADMIN_HEADER.subtitle}</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
           {ADMIN_QUICK_STATS.map((stat, index) => (
@@ -58,6 +59,7 @@ export default function App() {
           ))}
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <ActivityCard logs={ADMIN_ACTIVITY_LOGS} maxItems={8} />
           {ADMIN_CARDS.map((card, index) => (
             <ActionCard
               key={index}

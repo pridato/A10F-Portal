@@ -27,9 +27,9 @@ export const STUDENT_CARDS: DashboardCardItem[] = [
   },
   {
     icon: Video,
-    title: "Clases en Directo / Zoom",
+    title: "Zoom",
     description: "Únete a sesiones en vivo",
-    href: "#",
+    href: "https://zoom.us/",
   },
   {
     icon: PlayCircle,

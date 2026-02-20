@@ -44,7 +44,7 @@ export const PROFESOR_PAGE_CARDS: PortalCardItem[] = [
   { icon: BookOpen, title: "Cursos", variant: "default", href: "#" },
   { icon: Users, title: "Grupos", variant: "default", href: "#" },
   { icon: MessageSquare, title: "Comunicación", variant: "default", href: "#" },
-  { icon: Video, title: "Zoom", variant: "primary", href: "#" },
+  { icon: Video, title: "Zoom directamente!", variant: "primary", href: "https://zoom.us/" },
   { icon: Calendar, title: "Horarios", variant: "default", href: "#" },
   { icon: FolderOpen, title: "Material", variant: "default", href: "#" },
 ]
@@ -62,7 +62,7 @@ export const ADMINISTRADOR_PAGE_CARDS: PortalCardItem[] = [
   { icon: Mail, title: "Correo", variant: "default", href: "#" },
   { icon: HardDrive, title: "Drive", variant: "default", href: "#" },
   { icon: Briefcase, title: "Software Gestión", variant: "primary", href: "#" },
-  { icon: Video, title: "Zoom", variant: "primary", href: "#" },
+  { icon: Video, title: "Zoom directamente!", variant: "primary", href: "https://zoom.us/" },
   { icon: Users, title: "Usuarios", variant: "primary", href: "#" },
   { icon: Receipt, title: "Facturación", variant: "default", href: "#" },
 ]

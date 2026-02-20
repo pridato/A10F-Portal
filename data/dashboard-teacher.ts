@@ -35,7 +35,7 @@ export const TEACHER_CARDS: DashboardCardItem[] = [
     icon: ClipboardCheck,
     title: "Acadesoft / Pasar Lista",
     description: "Registra la asistencia de estudiantes",
-    href: "#",
+    href: "https://academia10alcala.acadesoft.com/mant/php/login.php",
   },
   {
     icon: BookOpen,
@@ -45,9 +45,9 @@ export const TEACHER_CARDS: DashboardCardItem[] = [
   },
   {
     icon: Video,
-    title: "Sala de Zoom",
+    title: "Zoom directamente!",
     description: "Inicia clases en directo",
-    href: "#",
+    href: "https://zoom.us/",
   },
   {
     icon: FolderOpen,

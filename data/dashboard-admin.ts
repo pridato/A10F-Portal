@@ -61,6 +61,6 @@ export const ADMIN_CARDS: DashboardCardItem[] = [
     icon: Settings,
     title: "Configuración Acadesoft",
     description: "Ajustes del sistema",
-    href: "#",
+    href: "https://academia10alcala.acadesoft.com/mant/php/login.php",
   },
 ]
